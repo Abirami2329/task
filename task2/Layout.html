@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> layout </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+.container{
+  display:flex;
+  flex-flow: row wrap;
+}
+.header {
+  height: 100px;
+  background-position: -307px 43px;
+  width: 100%;
+}
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: space-evenly;
+}
+.columnOne{
+  width: 100%;
+  height: 300px; 
+  padding: 10px;
+  text-align: center;
+  margin:5px;
+}
+.columnTwo{
+  width: 100%;
+  height: 300px; 
+  padding: 10px;
+  text-align: center;
+  margin:5px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.columnThree{
+  width: 100%;
+  height: 300px; 
+  padding: 10px;
+  text-align: center;
+  margin:5px;
+}
+.signup{
+  background-color: maroon;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin:5px;
+  width: 100%;
+}
+.content{
+  height:100px;
+  width:100%;
+  background-color: Pink;
+  padding-top: 30px;
+  text-align: center;
+  color: white;
+  margin:5px;
+}
+body{
+  margin:0;
+  font-family: Arial;
+  }
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .columnOne,.columnTwo,.columnThree,.signup {
+    flex: 100%;
+    flex-direction: column;
+  }
+  .orderOne{ order: 2;}
+  .orderTwo{ order: 3;}
+  .orderThree{ order: 4;}
+  .orderFour{ order: 1;}
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .content{order: 1;}
+  .row{order: 2;}
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .columnOne,.columnTwo,.columnThree,.signup{
+    flex: 50%;
+    flex-direction: row-reverse;
+  }
+  .orderOne{ order: 2;}
+  .orderTwo{ order: 3;}
+  .orderThree{ order: 4;}
+  .orderFour{ order: 1;}
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .content{order: 1;}
+  .row{order: 2;}
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .columnOne,.columnTwo,.columnThree,.signup{
+    flex: 50%;
+    flex-direction: row-reverse;
+  }
+  .orderOne{ order: 2;}
+  .orderTwo{ order: 3;}
+  .orderThree{ order: 4;}
+  .orderFour{ order: 1;}
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .content{order: 1;}
+  .row{order: 2;}
+}
+</style>
+</head>
+<body class="container">
+<div>
+  <div><img src= "image/spriteimage.svg" class="header"></div>
+</div>
+<div class="row">
+<div class="orderOne"><img src="image/111.jpg"  class="columnOne"></div>
+<div class="orderTwo"><img src="image/222.jpg"  class="columnTwo"></div>
+<div class="orderThree"><img src="image/333.jpg"  class="columnThree"></div>
+<div class="signup orderFour">
+  <h2>Signup</h2>
+</div>
+</div>
+<div class="content">
+  <h2>Beautiful Workplace</h2>
+</div>
+</body>
+</html>
