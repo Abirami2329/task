@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="registrationform.css">
+<script src="registrationform.js"></script>
+</head>
+<body>
+  <div>
+<form>
+  <div class="container">
+    <h1 class="title">Register</h1>
+    <hr>
+    <div class="userdetails">
+    <div class="input-box">
+    <label for="name"><b>Name</b></label><br>
+    <input type="text" placeholder="Enter Name" id="name">
+      </div><br>
+    <div class="input-box">
+    <label for="dob"><b>Date Of Birth</b></label><br>
+    <input type="date" placeholder="Enter DOB" id="dob">
+      </div><br>
+    <div class="input-box">
+     <label> <b>Gender</b></label><br>
+      <div class="gender">
+    <input type="radio" id="male" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" value="female">
+    <label for="female">Female</label>
+        </div>
+      </div><br>
+    <div class="input-box">
+    <label for="phonenumber"><b>PhoneNumber</b></label><br>
+    <input type="tel" placeholder="Enter Phone Number" id="phonenumber">
+      </div><br>
+      <div class="input-box">
+    <label for="email"><b>Email</b></label><br>
+    <input type="text" placeholder="Enter Email" id="email">
+      </div><br>
+    <div class="input-box">
+     <label><b>Hobby</b></label><br>
+      <div >
+    <input type="checkbox" id="valueOne" value="Drawing">
+    <label for="valueOne">Drawing</label>
+    <input type="checkbox" id="valueTwo" value="Dancing">
+    <label for="valueTwo">Dancing</label>
+    <input type="checkbox" id="valueThree" value="Singing">
+    <label for="valueThree">Singing</label>
+        </div>
+      </div><br>
+    <div class="input-box">
+    <label for="address"><b>Address</b></label><br>
+<textarea id="address" rows="4" cols="50">
+  Enter address</textarea>
+</div>
+    </div>
+    <div>
+    <button type="button" class="registerbtn" onclick ="onFormSubmit()" >Submit</button>
+      </div>
+   </div>
+   </form>
+  </div>
+<div>
+<table>
+<td>
+<table class="list" id="registrationList">
+<thead>
+<tr>
+ <th>Name</th>
+<th>Date of Birth</th>
+<th>Gender</th>
+<th>Phone Number</th>
+<th>Email</th>
+<th>Hobby</th>
+<th>Address</th>
+<th>Acion</th>
+			    
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  background: #FFC0CB;
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+div {
+    font-family:Lucida Sans Unicode;
+}
+.title {
+    color: #FF3659;
+}
+.container {
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+  form{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+  }
+  label{
+      font-size: 20px;
+  font-weight: 500;
+  }
+.userdetails .input-box input[type=text], input[type=date], input[type=tel] {
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 2px solid #ccc;
+  border-bottom-width: 2px;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.gender{
+  font-size: 20px;
+  font-weight: 500;
+ }
+
+.registerbtn {
+  background-color: #FF3659;
+  color: #FFFFFF;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.userdetails .input-box input:focus,
+.userdetails .input-box input:valid {
+  border-color: #FFC0CB;
+}
+.userdetails textarea:focus,
+.userdetails textarea:valid {
+  border: 2px solid #FFC0CB;
+  border-bottom-width: 2px;
+}
+
+.registerbtn:hover {
+  opacity: 3;
+}
+table{
+    width: 100%;
+}
+
+table{
+    border-collapse: collapse;
+}
+table.list{
+    width:100%;
+}
+
+td, th {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 4px;
+}
+tr:nth-child(even),table.list thead>tr {
+    background-color: #dddddd;
+}
