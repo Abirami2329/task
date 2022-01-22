@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TASK - Slider Image</title>
+    <link rel="stylesheet" href="sliderimage.css">
+  </head>
+  <body>
+<div>
+   <div class="heading">
+    <h1>SLIDER IMAGE</h1>
+  </div>
+ <div class="heading">
+  <h2>BIRDS</h2>
+</div>
+</div>
+    <div class="content">
+      <div class="images">
+        <img src="bird1.jpg">
+        <img src="bird2.jpg">
+        <img src="bird3.jpg">
+        <img src="bird4.jpg">
+        <img src="bird5.jpg">
+      </div>
+      <div class="btm-slides">
+        <span onclick="btm_slide(1)"></span>
+        <span onclick="btm_slide(2)"></span>
+        <span onclick="btm_slide(3)"></span>
+        <span onclick="btm_slide(4)"></span>
+        <span onclick="btm_slide(5)"></span>
+      </div>
+      <div id ="previous" class="sliders left" onclick="side_slide(-1)">
+	<a class="prev">&#10094;</a>
+        
+      </div>
+      <div id="next" class="sliders right" onclick="side_slide(1)">
+        <a class="next">&#10095;</a>
+      </div>
+    </div>
+   <script src="sliderimage.js"></script>
+  </body>
+</html>
