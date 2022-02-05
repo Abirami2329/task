@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="search.css">
+    <meta charset="utf-8" />
+  </head>
+  <body>
+
+<div id="cover">
+  <form method="get" action="">
+    <div class="tb">
+      <div class="td"><input type="text" placeholder="Search" id="filter" required></div>
+      <div class="td" id="s-cover">
+        <button type="submit" onclick = "showImage()">
+          <div id="s-circle"></div>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </form>
+    <div>
+<ul id ="items" style="display: none;"></ul>
+</div>
+</div>
+<div class="flowers-list">  
+<div class="card" data-filter ="flower">
+  <div class="flower_image"> <img src="images/flower1.jpg" alt="Rose" style="width:100%"> </div>
+  <div class="flower_title title-white">
+    <p>Rose</p>
+  </div>
+</div>
+
+  <div class="card" data-filter ="flower">
+  <div class="flower_image">
+    <img src="images/flower2.jpg" alt="Lights" style="width:100%">
+    </div>
+  <div class="flower_title title-white">
+    <p>Sunflower</p>
+  </div>
+</div>
+
+<div class="card" data-filter ="flower">
+  <div class="flower_image">
+    <img src="images/flower3.jpg" alt="Nature" style="width:100%">
+  </div>
+  <div class="flower_title title-white">
+    <p>Lotus</p>
+  </div>
+</div>
+  
+  <div class="card" data-filter ="flower">
+  <div class="flower_image">
+    <img src="images/flower4.jpg" alt="Nature" style="width:100%">
+    </div>
+  <div class="flower_title title-white">
+    <p>Lilly</p>
+  </div>
+  </div>
+
+
+  
+<div class="card" data-filter ="bird">
+  <div class="flower_image"> <img src="images/bird1.jpg" style="width:100%"> </div>
+  <div class="flower_title title-white">
+    <p>Parrot</p>
+  </div>
+</div>
+
+  <div class="card" data-filter ="bird">
+  <div class="flower_image">
+    <img src="images/bird2.jpg" style="width:100%">
+    </div>
+  <div class="flower_title title-white">
+    <p>Peacock</p>
+  </div>
+  </div>
+<div class="card" data-filter ="bird">
+  <div class="flower_image">
+    <img src="images/bird3.jpg" style="width:100%">
+  </div>
+  <div class="flower_title title-white">
+    <p>Eagle</p>
+  </div>
+</div>
+  
+  <div class="card" data-filter ="bird">
+  <div class="flower_image">
+    <img src="images/bird4.jpg" style="width:100%">
+    </div>
+  <div class="flower_title title-white">
+    <p>Dove</p>
+  </div>
+  </div>
+  
+<div class="card" data-filter ="animal">
+  <div class="flower_image"> <img src="images/animal1.jpeg" style="width:100%"> </div>
+  <div class="flower_title title-white">
+    <p>Tiger</p>
+  </div>
+</div>
+
+  <div class="card" data-filter ="animal">
+  <div class="flower_image">
+    <img src="images/animal2.jpg" style="width:100%">
+    </div>
+  <div class="flower_title title-white">
+    <p>Panda</p>
+  </div>
+</div>
+
+<div class="card" data-filter ="animal">
+  <div class="flower_image">
+    <img src="images/animal3.png" style="width:100%">
+  </div>
+  <div class="flower_title title-white">
+    <p>Deer</p>
+  </div>
+</div>
+  
+  <div class="card" data-filter ="animal">
+  <div class="flower_image">
+    <img src="images/animal4.jpg" style="width:100%">
+    </div>
+  <div class="flower_title title-white">
+    <p>Elephant</p>
+  </div>
+  </div>
+</div>
+
+
+    <script src="search.js"></script>
+  </body>
+</html>
