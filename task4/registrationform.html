@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang ="en">
 <head>
+	<title>Register Form</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="registrationform.css">
 <script src="registrationform.js"></script>
@@ -13,15 +14,15 @@
     <hr>
     <div class="userdetails">
     <div class="input-box">
-    <label for="name"><b>Name</b></label><br>
+    <label for="name"><strong>Name</strong></label><br>
     <input type="text" placeholder="Enter Name" id="name">
       </div><br>
     <div class="input-box">
-    <label for="dob"><b>Date Of Birth</b></label><br>
+    <label for="dob"><strong>Date Of Birth</strong></label><br>
     <input type="date" placeholder="Enter DOB" id="dob">
       </div><br>
     <div class="input-box">
-     <label> <b>Gender</b></label><br>
+     <label> <strong>Gender</strong></label><br>
       <div class="gender">
     <input type="radio" id="male" value="male">
     <label for="male">Male</label>
@@ -34,11 +35,11 @@
     <input type="tel" placeholder="Enter Phone Number" id="phonenumber">
       </div><br>
       <div class="input-box">
-    <label for="email"><b>Email</b></label><br>
+    <label for="email"><strong>Email</strong></label><br>
     <input type="text" placeholder="Enter Email" id="email">
       </div><br>
     <div class="input-box">
-     <label><b>Hobby</b></label><br>
+     <label><strong>Hobby</strong></label><br>
       <div >
     <input type="checkbox" id="valueOne" value="Drawing">
     <label for="valueOne">Drawing</label>
@@ -49,7 +50,7 @@
         </div>
       </div><br>
     <div class="input-box">
-    <label for="address"><b>Address</b></label><br>
+    <label for="address"><strong>Address</strong></label><br>
 <textarea id="address" rows="4" cols="50">
   Enter address</textarea>
 </div>
@@ -62,8 +63,12 @@
   </div>
 <div>
 <table>
+	<th></th>
+	<caption>Registered List</caption>
    <td>
 	<table class="list" id="registrationList">
+		<th></th>
+		<caption>Registered List</caption>
 	   <thead>
 	      <tr>
  		<th>Name</th>
