@@ -61,7 +61,7 @@ function filterImages(event) {
 function showImage() {
  var finalValue = document.getElementById('filter').value;
  imageName.forEach(function(image) {
-         if (!finalValue === image.firstChild.textContent || image.firstChild.textContent.charAt(0).toUpperCase() + image.firstChild.textContent.slice(1) ) {
+         if (!finalValue == image.firstChild.textContent || image.firstChild.textContent.charAt(0).toUpperCase() + image.firstChild.textContent.slice(1) ) {
            image.parentElement.parentElement.style.display = "none";
         }
 })
