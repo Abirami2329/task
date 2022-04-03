@@ -39,7 +39,7 @@ let filter = function(){
   render_lists(filtered);
 }
 input.addEventListener('keyup',(e) => {    
-     filter(e);
+     filter();
      filterImages(e);    
 });
 let selectValue = function(selectedvalue) {
