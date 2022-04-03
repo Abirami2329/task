@@ -25,7 +25,7 @@ let render_lists = function(lists){
 
 render_lists(users);
 let input = document.getElementById('filter');
-let filter = function(event){
+let filter = function(){
   let keyword = input.value.toLowerCase();
   let filtered = users.filter(function(user){
         user = user.toLowerCase();
@@ -59,7 +59,7 @@ function filterImages(event) {
     })
 }
 function showImage() {
- finalValue = document.getElementById('filter').value;
+ var finalValue = document.getElementById('filter').value;
  imageName.forEach(function(image) {
          if (!finalValue === image.firstChild.textContent || image.firstChild.textContent.charAt(0).toUpperCase() + image.firstChild.textContent.slice(1) ) {
            image.parentElement.parentElement.style.display = "none";
