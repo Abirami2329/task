@@ -79,11 +79,9 @@ hr {
 }
 table{
     width: 100%;
+  border-collapse: collapse;
 }
 
-table{
-    border-collapse: collapse;
-}
 table.list{
     width:100%;
 }
