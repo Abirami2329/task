@@ -169,7 +169,7 @@ function onFormSubmit() {
         if (selectedRow == null) {
             insertNewRecord(registerData);
 	} else {
-            updateRecord(registerData);
+            updateRecord();
 	}
         resetForm();
   }
