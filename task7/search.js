@@ -13,11 +13,11 @@ let users = [
 'Elephant'
 ];
 debugger;
-ul = document.getElementById("items");
+let ul = document.getElementById("items");
 
 let render_lists = function(lists){
   let li = "";
-  for(index in lists){
+  for(const index in lists){
     li += "<li onclick = selectValue(this.innerHTML) value="+lists[index]+">" + lists[index] + "</li>";
   }
   ul.innerHTML = li;
@@ -26,8 +26,8 @@ let render_lists = function(lists){
 render_lists(users);
 let input = document.getElementById('filter');
 let filter = function(event){
-  keyword = input.value.toLowerCase();
-  filtered = users.filter(function(user){
+  let keyword = input.value.toLowerCase();
+  let filtered = users.filter(function(user){
         user = user.toLowerCase();
        return user.indexOf(keyword) > -1; 
   });
