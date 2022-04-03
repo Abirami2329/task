@@ -80,21 +80,21 @@ function validateAddress() {
 function insertNewRecord(data) {
     var table = document.getElementById("registrationList").getElementsByTagName('tbody')[0];
     var newRow = table.insertRow(table.length);
-    cell1 = newRow.insertCell(0);
+    let cell1 = newRow.insertCell(0);
     cell1.innerHTML = data.name;
-    cell2 = newRow.insertCell(1);
+    let cell2 = newRow.insertCell(1);
     cell2.innerHTML = data.dob;
-    cell3 = newRow.insertCell(2);
+    let cell3 = newRow.insertCell(2);
     cell3.innerHTML = data.gender;
-    cell4 = newRow.insertCell(3);
+    let cell4 = newRow.insertCell(3);
     cell4.innerHTML = data.phonenumber;
-    cell5 = newRow.insertCell(4);
+    let cell5 = newRow.insertCell(4);
     cell5.innerHTML = data.email;
-    cell6 = newRow.insertCell(5);
+    let cell6 = newRow.insertCell(5);
     cell6.innerHTML = data.hobby;
-    cell7 = newRow.insertCell(6);
+    let cell7 = newRow.insertCell(6);
     cell7.innerHTML = data.address;
-    cell8 = newRow.insertCell(7);
+    let cell8 = newRow.insertCell(7);
     cell8.innerHTML = `<button onClick="onEdit(this)">Edit</button>
                        <button onClick="onDelete(this)">Delete</button>`;
 }
@@ -147,7 +147,7 @@ function onEdit(td) {
 	document.getElementById("valueThree").checked = true;
     }
 }
-function updateRecord(registerData) {
+function updateRecord() {
     selectedRow.cells[0].innerHTML = registerData.name;
     selectedRow.cells[1].innerHTML = registerData.dob;
     selectedRow.cells[2].innerHTML = registerData.gender;
@@ -159,7 +159,7 @@ function updateRecord(registerData) {
 
 function onDelete(td) {
     if (confirm('Are you sure to delete this record ?')) {
-        row = td.parentElement.parentElement;
+        let row = td.parentElement.parentElement;
         document.getElementById("registrationList").deleteRow(row.rowIndex);
         resetForm();
     }
@@ -173,4 +173,4 @@ function onFormSubmit() {
 	}
         resetForm();
   }
-};
+}
